@@ -1,10 +1,9 @@
-<h3> <%= @members.length %> Results </h3>
-
+<h1><%=@members.size%> Results </h1>
 <% @members.each do |member| %>
-  <div class="member">
-    <h6 class="name"> <%= member[:name] %> </h6>
-    <li class="role"> <%= member[:role] %> </li>
-    <li class="party"> <%= member[:party] %> </li>
-    <li class="district"> <%= member[:district] %> </li>
-  </div>
+  <ul class="member">
+  <li class="name"><%= member.name %></li>
+  <li class="role"><%= member.role %></li>
+  <li class="party"><%= member.party %></li>
+  <li class="district"><%= member.district %></li>
+</ul>
 <% end %>
