@@ -1,3 +1,13 @@
+# House Salad Refactor
+What is declarative Programming?
+- Writing code that we wish existed and worrying about implementation details later
+
+What is Red, Green, Refactor?
+ - Red: failing test
+ - Green: passing test
+ - Refactor to make code follow SRP or DRY up code
+ 
+I think our refactored code is a lot more abstract and encapsulated than it was before. I'd be interested in breaking out the PropublicaService further, pulling out the response variable into it's own method so it can be used throughout the call, not just for members, etc.
 # House Salad Base
 
 This repo is used as a base for the Consuming API lesson taught in Backend Module 3. To complete the lesson you will need to sign-up for an API key from the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
